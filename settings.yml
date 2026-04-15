@@ -1,13 +1,16 @@
 use_default_settings: true
 
 server:
-  secret_key: "ghost-secret-key"
+  secret_key: "ghost-key"
   bind_address: "0.0.0.0"
   port: 8080
   public_instance: true
-  base_url: "https://g-jxlf.onrender.com"
+  limiter: false
+  image_proxy: false
 
 search:
+  safe_search: 0
+  autocomplete: ""
   formats:
     - html
     - json
